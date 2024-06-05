@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>calculator</title>
+    </head>
+    <style>
+        table{
+            /*border:1px solid royalblue;*/
+            width:100%;
+            height:100%;
+            border-collapse: collapse;
+            background-color:aquamarine;
+        }
+        button{
+            width:20%;
+            height:20%;
+            border-collapse: collapse;
+        }
+        #disp{
+            width:91%;
+            height:90%;
+            /*border:2px solid black;*/
+            color:red;
+            border-collapse: collapse;
+        }
+        input:hover{
+            background-color:antiquewhite;
+        }
+        #i1{
+            width:24.70%;
+            height:90%;
+            font-size: 40px;
+        }
+        #i2{
+            width:24.70%;
+            height:90%;
+            font-size: 40px;
+        }
+        #i3{
+            width:24.70%;
+            height:90%;
+            font-size: 40px;
+        }
+        #i4{
+            width:24.70%;
+            height:90%;
+            font-size: 40px;
+        }
+        td{
+            /*border:1px solid goldenrod;*/
+            border-collapse: collapse;
+        }
+        #c1{
+            width:8%;
+            height:90%;
+            font-size: 17px;
+            margin-bottom:3px;
+        }
+        tr{
+            border-collapse: collapse;
+        }
+    </style>
+    <form name="calculator">
+    <body>
+   <center><table>
+
+    <tr><td>
+    <input Id="disp" type="text" name="display" readonly></input> <input id="c1" class="clearButton" type="button" value="C" onclick="calculator.display.value=''"></input>
+    </tr></td>
+        <tr><td>
+        <input class="button digits" id="i1" type="button" value="7" onclick="calculator.display.value+='7'"></input>
+        <input class="button digits" Id="i1" type="button" value="8" onclick="calculator.display.value+='8'"></input>
+        <input class="button digits" Id="i1" type="button" value="9" onclick="calculator.display.value+='9'"></input>
+        <input Id="i1" type="button" value="*" onclick="calculator.display.value+='*'"></input>
+    </td></tr>
+    <tr><td>
+        <input class="button digits" Id="i2" type="button" value="4" onclick="calculator.display.value+='4'"></input>
+        <input class="button digits" Id="i2" type="button" value="5" onclick="calculator.display.value+='5'"></input>
+        <input class="button digits" Id="i2" type="button" value="6" onclick="calculator.display.value+='6'"></input>
+        <input Id="i2" type="button" value="-" onclick="calculator.display.value+='-'"></input>
+    </td></tr>
+    <tr><td>
+        <input class="button digits" Id="i3" type="button" value="1" onclick="calculator.display.value+='1'"></input>
+        <input class="button digits" Id="i3" type="button" value="2" onclick="calculator.display.value+='2'"></input>
+        <input class="button digits" Id="i3" type="button" value="3" onclick="calculator.display.value+='3'"></input>
+        <input Id="i3" type="button" value="+" onclick="calculator.display.value+='+'"></input>
+    </td></tr>
+    <tr><td>
+        <input class="button digits" Id="i4" type="button" value="00" onclick="calculator.display.value+='00'"></input>
+        <input class="button digits" Id="i4" type="button" value="0" onclick="calculator.display.value+='0'"></input>
+        <input Id="i4" type="button" value="." onclick="calculator.display.value+='.'"></input>
+        <input Id="i4" type="button" value="=" onclick="calculator.display.value=eval(calculator.display.value)"></input>
+    </td></tr>
+</table></center>
+    </body>
+    </form>
+</html>
